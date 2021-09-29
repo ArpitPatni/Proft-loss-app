@@ -20,15 +20,15 @@ function calculateProfitAndLoss(initial,quantity,current){
     if(initial>current){
         var loss=(initial-current)*quantity;
         var lossPercentage=(loss/initial)*100;
-        outputElement.innerHTML=`Loss is ${loss} and Loss Percentage is ${lossPercentage}`;
+        outputElement.innerHTML=`Loss is ${loss} and Loss Percentage is ${lossPercentage}%`;
        
     }else if(current>initial){
         var profit=(current-initial)*quantity;
         var profitPercentage=(profit/initial)*100;
-        outputElement.innerHTML=`Profit is ${profit} and Profit Percentage is ${profitPercentage}`;
+        outputElement.innerHTML=`Profit is ${profit} and Profit Percentage is ${profitPercentage}%`;
         
     }else{
-        outputElement.innerHTML="No pain No gain";
+        outputElement.innerHTML="No profit No Loss";
         console.log("No pain no gain");
     }
 }

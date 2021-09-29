@@ -1,10 +1,54 @@
+:root{
+    --primary-color:#818CF8;
+}
+
+body{
+    background-color: var(--primary-color);
+}
+
 label{
     display: block;
     padding-bottom: 1rem;
 }
+placeholder{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+input{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5rem;
+    border-radius: 1rem;
+    padding: 0.5rem 2rem;
+    width: 30%;
+}
 h1{
     text-align: center;
+    color: white;
+}
+h2{
+    color: white;
 }
 main{
     text-align: center;
+}
+
+#calculate-btn{
+    border-radius: 1rem;
+    width: 20%;
+    margin-top: 1rem;
+    padding: 0.5rem 2rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#output-box{
+    margin-top: 1rem;
+    color: white;
+    font-size: xx-large;
+
 }
